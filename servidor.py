@@ -90,8 +90,9 @@ def sms():
                 from_=NUMBER,
                 # messaging_service_sid = TWILIO_SID,
                 to=destination,
-                body=message,
+                body=message
             )
+            print(f"04", message)
             """ 
                 messaging_service_sid=os.environ["messaging_service_sid"],
                 body=message,
